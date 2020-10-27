@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css">
+    <title>Case converter</title>
+
+    <style type="text/css">
+        .textArea
+        {
+            display:block;
+            margin:10px;
+        }
+
+        .radioBtnArea{
+            margin:10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Case converter</h1>
+        <div>
+            <textarea id="txtarea_input" class="textArea" cols="50" rows="10" placeholder="こちらに入力してください"></textarea>
+            <textarea id="txtarea_result" class="textArea" cols="50" rows="10" placeholder="こちらに結果が表示されます。"></textarea>
+        </div>
+        <div class="radioBtnArea">
+            <p><input type="radio" name="convert_mode" id="snake_to_Lcamel" checked>スネークからローワーキャメル</p>
+            <p><input type="radio" name="convert_mode" id="snake_to_Ucamel">スネークからアッパーキャメル</p>
+            <p><input type="radio" name="convert_mode" id="camel_to_snake">キャメルからスネーク</p>
+        </div>
+    </div>
+
+    <script src='./lib/jquery/jquery.min.js'></script>
+    <script src="./case_converter.js"></script>
+</body>
+
+</html>
